@@ -431,5 +431,3 @@ services:
       - fastapi
       - redis
 ```
-
-## Conclusion
