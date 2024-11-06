@@ -400,21 +400,31 @@ Exécutez les commandes ci-dessus dans le shell SQLite pour ajouter des index su
 
 1. Configurer Nginx pour optimiser le flux de requêtes et améliorer les performances de cache :
 
+Créer un fichier nginx.conf avec le code suivant :
+
 ```nginx
-server {
-    listen 80;
+events {
+    # Configuration minimale pour satisfaire NGINX
+    worker_connections 1024;
+}
+http {
+    # Déclaration de la zone de cache
+    proxy_cache_path /var/cache/nginx/redis_cache levels=1:2 keys_zone=redis_cache:10m max_size=1g inactive=60m use_temp_path=off;
 
-    location / {
-        proxy_pass http://fastapi:8000;
-        proxy_cache redis_cache;
-        proxy_cache_valid 200 1h;
-    }
+    server {
+        listen 80;
 
-    location /static/ {
-        alias /app/static/;
+        location / {
+            proxy_pass http://fastapi:8000;
+            proxy_cache redis_cache;
+            proxy_cache_valid 200 1h;
+        }
+
+        location /static/ {
+            alias /app/static/;
+        }
     }
 }
-
 ```
 
 2. Mettre à jour docker-compose.yml pour inclure Nginx :
