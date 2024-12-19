@@ -14,7 +14,7 @@ Commencez par la structure suivante :
 
 eco-conception-back/
 ├── app/
-│   ├── main.py
+│   ├── app.py
 │   ├── models.py
 │   ├── requirements.txt
 ├── Dockerfile
