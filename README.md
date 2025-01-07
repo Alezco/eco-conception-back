@@ -58,7 +58,7 @@ Ajoutez un fichier Dockerfile dans grafana/ pour configurer un conteneur Grafana
 
 **1.4 Configurer `Dockerfile`**
 
-Créer un fichier Dockerfile pour l'API en FastAPI :
+Créez un fichier Dockerfile pour l'API en FastAPI :
 
 ```dockerfile
 FROM python:3.12-slim
@@ -125,8 +125,8 @@ Vous pourrez visualiser les premières métriques de FastAPI.
 
 ### Etape 2 : Création de l’API de Base avec FastAPI et SQLite
 
-1. Créer le fichier app/main.py avec des endpoints de base. 
-2. Ajouter app/models.py : Pour gérer les modèles de données et les connexions à SQLite.
+1. Créez le fichier app/main.py avec des endpoints de base. 
+2. Ajoutez app/models.py : Pour gérer les modèles de données et les connexions à SQLite.
 
 **`app.py`**
 
@@ -251,8 +251,8 @@ ab -n 1000 -c 10 http://127.0.0.1:8000/movies
 
 ### Etape 3 : Population de la base de données avec des données factices
 
-1. Ajouter faker pour générer des données fictives : Installez `faker` pour enrichir la base de données. 
-2. Créer populate_db.py : Exécutez ce script pour remplir la base de données avec des films et des critiques factices.
+1. Ajoutez faker pour générer des données fictives : Installez `faker` pour enrichir la base de données. 
+2. Créez populate_db.py : Exécutez ce script pour remplir la base de données avec des films et des critiques factices.
 
 **`populate_db.py`**
 
@@ -341,7 +341,7 @@ Contrôle : Mesurez à nouveau les performances pour observer l'impact de la pag
 
 Redis est ajouté pour réduire les temps de réponse pour des requêtes répétitives.
 
-1. Ajouter Redis à docker-compose.yml
+1. Ajoutez Redis à docker-compose.yml
 
 ```yaml
 
@@ -398,9 +398,9 @@ Exécutez les commandes ci-dessus dans le shell SQLite pour ajouter des index su
 
 ### Etape 7 : Ajout d'un proxy avec Nginx pour la gestion du cache Redis
 
-1. Configurer Nginx pour optimiser le flux de requêtes et améliorer les performances de cache :
+1. Configurez Nginx pour optimiser le flux de requêtes et améliorer les performances de cache :
 
-Créer un fichier nginx.conf avec le code suivant :
+Créez un fichier nginx.conf avec le code suivant :
 
 ```nginx
 events {
