@@ -250,7 +250,7 @@ ab -n 1000 -c 10 http://127.0.0.1:8000/movies
 
 ### Etape 3 : Population de la base de données avec des données factices
 
-1. Ajoutez faker pour générer des données fictives : Installez `faker` pour enrichir la base de données. 
+1. Ajoutez faker pour générer des données fictives : Ajoutez `faker` à `requirements.txt` pour enrichir la base de données. 
 2. Créez populate_db.py : Exécutez ce script pour remplir la base de données avec des films et des critiques factices.
 
 **`populate_db.py`**
