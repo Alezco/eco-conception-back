@@ -124,7 +124,7 @@ Vous pourrez visualiser les premières métriques de FastAPI.
 
 ### Etape 2 : Création de l’API de Base avec FastAPI et SQLite
 
-1. Créez le fichier app/main.py avec des endpoints de base. 
+1. Créez le fichier app/app.py avec des endpoints de base. 
 2. Ajoutez app/models.py : Pour gérer les modèles de données et les connexions à SQLite.
 
 **`app.py`**
@@ -352,7 +352,7 @@ services:
 
 ```
 
-2. Mettre à jour main.py pour inclure le caching
+2. Mettre à jour app.py pour inclure le caching
 
 ```python
 import redis
