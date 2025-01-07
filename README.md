@@ -118,7 +118,7 @@ volumes:
 docker-compose up --build
 ```
 
-Contrôle : Après le démarrage, accédez à Grafana sur http://localhost:3000 et ajoutez Prometheus comme source de données (http://prometheus:9090). 
+Contrôle : Après le démarrage, accédez à Grafana sur http://localhost:3000. L'identifiant (par défaut) est `admin`, et le mot de passe est celui renseigné dans `GF_SECURITY_ADMIN_PASSWORD` (`docker-compose.yml`), ici `secret`. Ensuite, ajoutez Prometheus comme source de données (http://prometheus:9090). 
 
 Vous pourrez visualiser les premières métriques de FastAPI.
 
