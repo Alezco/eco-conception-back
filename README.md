@@ -4,7 +4,7 @@ Atelier d'éco-conception back-end
 ## Scénario Technique
 
 Vous travaillez pour une entreprise technologique qui développe une plateforme de recommandation de films pour les utilisateurs. La plateforme utilise une API backend pour gérer les données des films, les avis des utilisateurs, et les recommandations personnalisées. Votre objectif est de construire cette API tout en appliquant des techniques d'éco-conception pour minimiser l'empreinte écologique et optimiser les performances.
-### Etape 1 : Configuration Initiale avec Docker, FastAPI, SQLite, Prometheus et Grafana
+### Etape 1 : Configuration Initiale avec Docker, FastAPI, Prometheus et Grafana
 
 **1.1 Préparer l'environnement de base avec Docker**
 
@@ -30,7 +30,6 @@ eco-conception-back/
 fastapi
 uvicorn
 pydantic
-sqlite
 ```
 
 **1.3 Créer les fichiers de configuration de Prometheus et Grafana**
