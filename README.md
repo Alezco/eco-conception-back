@@ -242,7 +242,7 @@ uvicorn app:app --reload
 ```
 
 **Mesure des Performances Initiales**
-
+Si vous n'avez pas Apache Benchmark sur votre machine, installez la dépendance et lancez :
 ```shell
 ab -n 1000 -c 10 http://127.0.0.1:8000/movies
 ```
