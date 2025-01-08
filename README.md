@@ -140,7 +140,7 @@ from prometheus_fastapi_instrumentator import Instrumentator
 Instrumentator().instrument(app).expose(app)
 ```
 
-Pour remonter les métriques de FastAPI à Grafana, utilisez [Prometheus FastAPI Instrumentator](https://github.com/trallnag/prometheus-fastapi-instrumentator)
+Pour plus de détails, vous pouvez utiliser la documentation de [Prometheus FastAPI Instrumentator](https://github.com/trallnag/prometheus-fastapi-instrumentator)
 
 Vous pourrez visualiser les premières métriques de FastAPI en allant dans `Explore` > `Metrics` dans l'interface Grafana
 
