@@ -108,6 +108,9 @@ services:
 volumes:
   grafana:
 
+networks:
+  driver: bridge
+
 ```
 
 **1.6 Exécution de l'application**
