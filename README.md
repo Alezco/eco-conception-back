@@ -239,13 +239,6 @@ def get_recommendations() -> List[Movie]:
 
 #### Exécution de l'Application
 
-**Installation des dépendances**
-
-```shell
-pip install -r requirements.txt
-uvicorn app:app --reload
-```
-
 **Mesure des Performances Initiales**
 Si vous n'avez pas Apache Benchmark sur votre machine, installez la dépendance et lancez :
 ```shell
