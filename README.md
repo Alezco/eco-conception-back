@@ -36,7 +36,6 @@ pydantic
 Dans prometheus/, ajoutez le fichier prometheus.yml :
 
 ```yaml
-
 global:
   scrape_interval: 15s
 
