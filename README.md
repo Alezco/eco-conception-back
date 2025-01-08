@@ -126,8 +126,9 @@ docker compose up --build
 
 Contrôle : Après le démarrage, accédez à Grafana sur http://localhost:3000. L'identifiant (par défaut) est `admin`, et le mot de passe est celui renseigné dans `GF_SECURITY_ADMIN_PASSWORD` (`docker-compose.yml`), ici `secret`. Ensuite, ajoutez Prometheus comme source de données (http://prometheus:9090). 
 
-Vous pourrez visualiser les premières métriques de FastAPI.
+Pour remonter les métriques de FastAPI à Grafana, utilisez [Prometheus FastAPI Instrumentator](https://github.com/trallnag/prometheus-fastapi-instrumentator)
 
+Vous pourrez visualiser les premières métriques de FastAPI.
 
 ### Etape 2 : Création de l’API de Base avec FastAPI et SQLite
 
