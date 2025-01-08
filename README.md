@@ -131,8 +131,10 @@ docker compose up --build
 
 **1.7 Contrôle du bon fonctionnement de Prometheus et Grafana**
 
+Ajoutez la dépendance `prometheus_fastapi_instrumentator` dans `requirements.txt`
+
 Pour remonter des métriques, ajoutez les lignes suivantes dans `main.py`
-```
+```python
 from prometheus_fastapi_instrumentator import Instrumentator
 
 Instrumentator().instrument(app).expose(app)
