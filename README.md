@@ -142,7 +142,7 @@ Instrumentator().instrument(app).expose(app)
 
 Pour plus de détails, vous pouvez utiliser la documentation de [Prometheus FastAPI Instrumentator](https://github.com/trallnag/prometheus-fastapi-instrumentator)
 
-Vous pourrez visualiser les premières métriques de FastAPI en allant dans `Explore` > `Metrics` dans l'interface Grafana
+Vous pourrez visualiser les premières métriques de FastAPI en allant dans `Explore` > `Metrics` dans l'interface Grafana. Si vous avez des métriques commençant par `http_`, c'est que vous avez bien accès aux métriques remontées par Prometheus FastAPI Instrumentator.
 
 ### Etape 2 : Création de l’API de Base avec FastAPI et SQLite
 
