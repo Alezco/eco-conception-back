@@ -19,7 +19,6 @@ eco-conception-back/
 │   ├── requirements.txt
 ├── Dockerfile
 ├── docker-compose.yml
-├── grafana/
 ├── prometheus/
 
 ```
