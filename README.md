@@ -83,6 +83,8 @@ services:
       - "8000:8000"
     volumes:
       - ./app:/app
+    networks:
+      - my_network
 
   prometheus:
     image: prom/prometheus
