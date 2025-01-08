@@ -71,7 +71,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ```
 
-**1.5 Configurer `Dockerfile`**
+**1.5 Configurer `docker-compose.yml`**
 
 Associez les services FastAPI, Prometheus et Grafana dans `docker-compose.yml` :
 
