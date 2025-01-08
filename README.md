@@ -266,7 +266,7 @@ ab -n 1000 -c 10 http://127.0.0.1:8000/movies
 ### Etape 3 : Population de la base de données avec des données factices
 
 1. Ajoutez faker pour générer des données fictives : Ajoutez `faker` à `requirements.txt` pour enrichir la base de données. 
-2. Créez populate_db.py : Exécutez ce script pour remplir la base de données avec des films et des critiques factices.
+2. Créez `populate_db.py` avec le code suivant :
 
 **`populate_db.py`**
 
@@ -331,7 +331,7 @@ if __name__ == "__main__":
         print("Usage: python populate_db.py <nombre_de_films>")
 
 ```
-Dans le conteneur `fastapi`, lancez la commande pour mettre 100000 films dans la base de données :
+3. Dans le conteneur de FastAPI, lancez la commande pour mettre 100000 films dans la base de données :
 
 ```shell
 python populate_db.py 100000
