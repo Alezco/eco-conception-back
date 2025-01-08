@@ -51,8 +51,6 @@ scrape_configs:
 ```
 __Explication : Ce fichier configure Prometheus pour surveiller l'API FastAPI et les conteneurs Docker.__
 
-Ajoutez un fichier Dockerfile dans grafana/ pour configurer un conteneur Grafana qui surveille notre API avec un tableau de bord personnalisable.
-
 **1.4 Configurer `Dockerfile`**
 
 Créez un fichier Dockerfile pour l'API en FastAPI :
