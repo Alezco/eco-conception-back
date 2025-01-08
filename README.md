@@ -400,7 +400,7 @@ Contrôle : Lancez plusieurs requêtes pour /movies et observez comment Redis r�
 1. Ajout d'Index
 
 Améliorez les performances des requêtes en ajoutant des index. 
-Dans le conteneur Docker de FastAPI, lancez `sqlite3 test` pour lancer le shell SQLite. Puisq, utilisez les commandes suivantes :
+Dans le conteneur Docker de FastAPI, lancez le shell SQLite (la base de données s'appelle `test`). Puisq, utilisez les commandes suivantes :
 
 ```sql
 -- Index sur le titre des films
