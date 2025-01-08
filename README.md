@@ -121,7 +121,7 @@ networks:
 **1.6 Exécution de l'application**
 
 ```shell
-docker-compose up --build
+docker compose up --build
 ```
 
 Contrôle : Après le démarrage, accédez à Grafana sur http://localhost:3000. L'identifiant (par défaut) est `admin`, et le mot de passe est celui renseigné dans `GF_SECURITY_ADMIN_PASSWORD` (`docker-compose.yml`), ici `secret`. Ensuite, ajoutez Prometheus comme source de données (http://prometheus:9090). 
