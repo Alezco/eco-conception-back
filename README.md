@@ -125,7 +125,7 @@ Contrôle : Après le démarrage, accédez à Grafana sur http://localhost:3000.
 
 Pour remonter les métriques de FastAPI à Grafana, utilisez [Prometheus FastAPI Instrumentator](https://github.com/trallnag/prometheus-fastapi-instrumentator)
 
-Vous pourrez visualiser les premières métriques de FastAPI.
+Vous pourrez visualiser les premières métriques de FastAPI en allant dans `Explore` > `Metrics` dans l'interface Grafana
 
 ### Etape 2 : Création de l’API de Base avec FastAPI et SQLite
 
