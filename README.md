@@ -123,7 +123,20 @@ networks:
 docker compose up --build
 ```
 
-Contrôle : Après le démarrage, accédez à Grafana sur http://localhost:3000. L'identifiant (par défaut) est `admin`, et le mot de passe est celui renseigné dans `GF_SECURITY_ADMIN_PASSWORD` (`docker-compose.yml`), ici `secret`. Ensuite, ajoutez Prometheus comme source de données (http://prometheus:9090). 
+Contrôle : Après le démarrage, accédez à Grafana sur http://localhost:3000. L'identifiant (par défaut) est `admin`, et le mot de passe est celui renseigné dans `GF_SECURITY_ADMIN_PASSWORD` (`docker-compose.yml`), ici `secret`. Ensuite, ajoutez Prometheus comme source de données (http://prometheus:9090).
+
+```shell
+docker compose up --build
+```
+
+**1.7 Contrôle du bon fonctionnement de Prometheus et Grafana**
+
+Pour remonter des métriques, ajoutez les lignes suivantes dans `main.py`
+```
+from prometheus_fastapi_instrumentator import Instrumentator
+
+Instrumentator().instrument(app).expose(app)
+```
 
 Pour remonter les métriques de FastAPI à Grafana, utilisez [Prometheus FastAPI Instrumentator](https://github.com/trallnag/prometheus-fastapi-instrumentator)
 
