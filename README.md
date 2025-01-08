@@ -316,10 +316,10 @@ if __name__ == "__main__":
         print("Usage: python populate_db.py <nombre_de_films>")
 
 ```
-Exéution du script pour peupler la base de données avec 100 films :
+Dans le conteneur `fastapi`, lancez la commande pour mettre 100000 films dans la base de données :
 
 ```shell
-python populate_db.py 1000000
+python populate_db.py 100000
 ```
 
 Observation des performances : Utilisez Prometheus et Grafana pour observer la consommation de ressources avant et après la génération de données.
