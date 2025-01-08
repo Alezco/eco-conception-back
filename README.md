@@ -397,7 +397,8 @@ Contrôle : Lancez plusieurs requêtes pour /movies et observez comment Redis r�
 
 1. Ajout d'Index
 
-Améliorez les performances des requêtes en ajoutant des index. Utilisez les commandes suivantes dans le shell SQLite :
+Améliorez les performances des requêtes en ajoutant des index. 
+Dans le conteneur Docker de FastAPI, lancez `sqlite3 test` pour lancer le shell SQLite. Puisq, utilisez les commandes suivantes :
 
 ```sql
 -- Index sur le titre des films
@@ -409,8 +410,6 @@ CREATE INDEX IF NOT EXISTS idx_reviews_movie_id ON reviews(movie_id);
 ```
 
 Exécutez les commandes ci-dessus dans le shell SQLite pour ajouter des index sur les colonnes `title` de la table `movies` et `movie_id` de la table `reviews`.
-
-
 
 ### Etape 7 : Ajout d'un proxy avec Nginx pour la gestion du cache Redis
 
