@@ -364,6 +364,8 @@ services:
     image: redis:alpine
     ports:
       - "6379:6379"
+    networks:
+      - my_network
 
 ```
 
@@ -455,4 +457,6 @@ services:
     depends_on:
       - fastapi
       - redis
+    networks:
+      - my_network
 ```
