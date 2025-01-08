@@ -367,7 +367,9 @@ services:
 
 ```
 
-2. Mettre à jour main.py pour inclure le caching
+2. Ajoutez `redis` aux dépendances dans `requirements.txt`
+
+3. Mettez à jour main.py pour inclure le caching
 
 ```python
 import redis
