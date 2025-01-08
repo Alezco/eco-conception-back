@@ -77,7 +77,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 Associez les services FastAPI, Prometheus et Grafana dans `docker-compose.yml` :
 
 ```yaml
-version: '3.8'
+version: "3.8"
 
 services:
   fastapi:
@@ -95,6 +95,8 @@ services:
       - --config.file=/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
+    networks:
+      - my_network
 
   grafana:
     image: grafana/grafana
@@ -104,12 +106,15 @@ services:
       - "3000:3000"
     volumes:
       - grafana:/var/lib/grafana
+    networks:
+      - my_network
 
 volumes:
   grafana:
 
 networks:
-  driver: bridge
+  my_network:
+    driver: bridge
 
 ```
 
